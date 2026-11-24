@@ -1,0 +1,3 @@
+sample_id,group_id,template_path,holes_path,nm_per_px,label,data_kind,split
+w03_f12_c04,wafer03,template/w03_f12_c04.png,holes/w03_f12_c04.png,0.8,good,experimental,
+w03_f12_c05,wafer03,template/w03_f12_c05.png,holes/w03_f12_c05.png,0.8,line_or_bridge,experimental,

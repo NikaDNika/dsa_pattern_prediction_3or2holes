@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/
+experiments/
+outputs/
+
+# Local environments and credentials
+venv/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Model weights, scientific caches and raw microscope images
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.tif
+*.tiff
+
+# Local SEM photographs used during manual testing
+examples/*.jpg

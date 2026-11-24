@@ -1,0 +1,32 @@
+{
+  "pairs": "data/sem_pairs_256",
+  "out": "experiments/classification/balanced_loss_v2",
+  "device": "cuda",
+  "seed": 42,
+  "runs": [
+    {
+      "model": "resnet18",
+      "name": "resnet18_inverse_weight",
+      "epochs": 10,
+      "batch": 24,
+      "lr": 0.0001,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 5,
+      "weight_power": 1
+    },
+    {
+      "model": "convnext_tiny",
+      "name": "convnext_inverse_weight",
+      "epochs": 10,
+      "batch": 12,
+      "lr": 0.0001,
+      "weight_decay": 0.05,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 5,
+      "weight_power": 1
+    }
+  ]
+}

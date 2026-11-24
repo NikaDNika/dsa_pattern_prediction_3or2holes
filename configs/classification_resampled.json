@@ -1,0 +1,36 @@
+{
+  "pairs": "data/sem_pairs_256",
+  "out": "experiments/classification/resampled_v3",
+  "device": "cuda",
+  "seed": 42,
+  "runs": [
+    {
+      "model": "resnet18",
+      "name": "resnet18_balanced_sampling",
+      "epochs": 20,
+      "min_epochs": 10,
+      "batch": 24,
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 7,
+      "weight_power": 0,
+      "two_hole_fraction": 0.5
+    },
+    {
+      "model": "convnext_tiny",
+      "name": "convnext_balanced_sampling",
+      "epochs": 20,
+      "min_epochs": 10,
+      "batch": 12,
+      "lr": 0.0001,
+      "weight_decay": 0.05,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 7,
+      "weight_power": 0,
+      "two_hole_fraction": 0.5
+    }
+  ]
+}

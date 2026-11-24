@@ -1,0 +1,56 @@
+{
+  "pairs": "data/sem_pairs_256",
+  "out": "experiments/classification/comparison_v1",
+  "device": "cuda",
+  "seed": 42,
+  "runs": [
+    {
+      "epochs": 8,
+      "batch": 24,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 4,
+      "weight_power": 0.5,
+      "name": "unet_encoder_lr1e3",
+      "model": "unet_encoder",
+      "lr": 0.001
+    },
+    {
+      "epochs": 8,
+      "batch": 24,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 4,
+      "weight_power": 0.5,
+      "name": "resnet18_lr3e4",
+      "model": "resnet18",
+      "lr": 0.0003
+    },
+    {
+      "epochs": 8,
+      "batch": 24,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 4,
+      "weight_power": 0.5,
+      "name": "resnet18_lr1e4",
+      "model": "resnet18",
+      "lr": 0.0001
+    },
+    {
+      "epochs": 8,
+      "batch": 12,
+      "weight_decay": 0.01,
+      "label_smoothing": 0,
+      "augment": true,
+      "patience": 4,
+      "weight_power": 0.5,
+      "name": "convnext_tiny_lr1e4",
+      "model": "convnext_tiny",
+      "lr": 0.0001
+    }
+  ]
+}
